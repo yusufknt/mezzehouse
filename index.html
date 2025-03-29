@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Savoria - Exquisite dining experience with flavors from around the world"
+    />
+    <title>Savoria | Fine Dining Restaurant</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header id="header">
+      <div class="container">
+        <div class="logo">
+          <h1>Savoria</h1>
+        </div>
+        <nav id="navbar">
+          <ul>
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+          </ul>
+        </nav>
+        <div class="mobile-menu-btn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home">
+      <div class="hero-slider">
+        <div class="slide active">
+          <div class="slide-content">
+            <h2>Exquisite Dining Experience</h2>
+            <p>Savor the finest flavors crafted with passion and creativity</p>
+            <div class="hero-buttons">
+              <a href="#menu" class="btn">View Menu</a>
+              <a href="#contact" class="btn btn-outline">Make Reservation</a>
+            </div>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="slide-content">
+            <h2>Culinary Artistry</h2>
+            <p>Where tradition meets innovation in every plate</p>
+            <div class="hero-buttons">
+              <a href="#menu" class="btn">View Menu</a>
+              <a href="#contact" class="btn btn-outline">Make Reservation</a>
+            </div>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="slide-content">
+            <h2>Unforgettable Moments</h2>
+            <p>Create memories in our elegant atmosphere</p>
+            <div class="hero-buttons">
+              <a href="#menu" class="btn">View Menu</a>
+              <a href="#contact" class="btn btn-outline">Make Reservation</a>
+            </div>
+          </div>
+        </div>
+        <button class="slider-btn prev-btn">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="slider-btn next-btn">
+          <i class="fas fa-chevron-right"></i>
+        </button>
+        <div class="slider-dots">
+          <span class="dot active" data-slide="0"></span>
+          <span class="dot" data-slide="1"></span>
+          <span class="dot" data-slide="2"></span>
+        </div>
+      </div>
+
+      <div class="container welcome-section">
+        <div class="section-header">
+          <h2>Welcome to Savoria</h2>
+          <div class="separator"></div>
+        </div>
+        <p class="welcome-text">
+          Experience the perfect blend of sophisticated ambiance and exceptional
+          cuisine at Savoria. Our passionate chefs create culinary masterpieces
+          using only the finest, freshest ingredients.
+        </p>
+
+        <div class="featured-items">
+          <h3>Featured Specialties</h3>
+          <div class="featured-grid">
+            <div class="featured-item">
+              <img src="yemek2.png" alt="Featured dish" />
+              <h4>Pan-Seared Scallops</h4>
+              <p>With saffron risotto and lemon butter sauce</p>
+              <span class="price">$32</span>
+            </div>
+            <div class="featured-item">
+              <img src="yemek5.png" alt="Featured dish" />
+              <h4>Truffle Ribeye</h4>
+              <p>Prime beef with truffle butter and rosemary potatoes</p>
+              <span class="price">$48</span>
+            </div>
+            <div class="featured-item">
+              <img src="yemek6.png" alt="Featured dish" />
+              <h4>Chocolate Soufflé</h4>
+              <p>With vanilla bean ice cream and berry compote</p>
+              <span class="price">$16</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu">
+      <div class="container">
+        <div class="section-header">
+          <h2>Our Menu</h2>
+          <div class="separator"></div>
+          <p>
+            Discover our culinary creations crafted with passion and the finest
+            ingredients
+          </p>
+        </div>
+
+        <div class="menu-filter">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="starters">Starters</button>
+          <button class="filter-btn" data-filter="main">Main Courses</button>
+          <button class="filter-btn" data-filter="desserts">Desserts</button>
+          <button class="filter-btn" data-filter="drinks">Drinks</button>
+        </div>
+
+        <div class="menu-grid">
+          <!-- Starters -->
+          <div class="menu-item starters">
+            <div class="menu-img">
+              <img src="yemek2.png" alt="Crispy Calamari" />
+            </div>
+            <div class="menu-content">
+              <h4>Crispy Calamari <span class="price">$16</span></h4>
+              <p>Lightly fried with spiced marinara sauce and lemon aioli</p>
+            </div>
+          </div>
+
+          <div class="menu-item starters">
+            <div class="menu-img">
+              <img src="yemek5.png" alt="Burrata Salad" />
+            </div>
+            <div class="menu-content">
+              <h4>Burrata Salad <span class="price">$18</span></h4>
+              <p>
+                Heirloom tomatoes, fresh basil, aged balsamic, extra virgin
+                olive oil
+              </p>
+            </div>
+          </div>
+
+          <div class="menu-item starters">
+            <div class="menu-img">
+              <img src="yemek6.png" alt="Tuna Tartare" />
+            </div>
+            <div class="menu-content">
+              <h4>Tuna Tartare <span class="price">$22</span></h4>
+              <p>
+                Sushi-grade tuna, avocado, cucumber, citrus soy dressing, crispy
+                wonton
+              </p>
+            </div>
+          </div>
+
+          <!-- Main Courses -->
+          <div class="menu-item main">
+            <div class="menu-img">
+              <img src="yemek2.png" alt="Herb-Crusted Salmon" />
+            </div>
+            <div class="menu-content">
+              <h4>Herb-Crusted Salmon <span class="price">$34</span></h4>
+              <p>
+                Wild-caught salmon, lemon herb crust, asparagus, fingerling
+                potatoes
+              </p>
+            </div>
+          </div>
+
+          <div class="menu-item main">
+            <div class="menu-img">
+              <img src="yemek5.png" alt="Filet Mignon" />
+            </div>
+            <div class="menu-content">
+              <h4>Filet Mignon <span class="price">$45</span></h4>
+              <p>
+                8oz center cut, truffle mashed potatoes, seasonal vegetables,
+                red wine reduction
+              </p>
+            </div>
+          </div>
+
+          <div class="menu-item main">
+            <div class="menu-img">
+              <img src="yemek6.png" alt="Mushroom Risotto" />
+            </div>
+            <div class="menu-content">
+              <h4>Wild Mushroom Risotto <span class="price">$28</span></h4>
+              <p>
+                Arborio rice, assorted wild mushrooms, white wine, parmesan,
+                fresh herbs
+              </p>
+            </div>
+          </div>
+
+          <!-- Desserts -->
+          <div class="menu-item desserts">
+            <div class="menu-img">
+              <img src="yemek2.png" alt="Tiramisu" />
+            </div>
+            <div class="menu-content">
+              <h4>Classic Tiramisu <span class="price">$14</span></h4>
+              <p>
+                Espresso-soaked ladyfingers, mascarpone cream, cocoa dusting
+              </p>
+            </div>
+          </div>
+
+          <div class="menu-item desserts">
+            <div class="menu-img">
+              <img src="yemek6.png" alt="Crème Brûlée" />
+            </div>
+            <div class="menu-content">
+              <h4>Vanilla Bean Crème Brûlée <span class="price">$13</span></h4>
+              <p>
+                Rich vanilla custard, caramelized sugar crust, fresh berries
+              </p>
+            </div>
+          </div>
+
+          <!-- Drinks -->
+          <div class="menu-item drinks">
+            <div class="menu-img">
+              <img src="yemek2.png" alt="Signature Cocktail" />
+            </div>
+            <div class="menu-content">
+              <h4>Savoria Signature <span class="price">$16</span></h4>
+              <p>Gin, elderflower, fresh lime, cucumber, mint</p>
+            </div>
+          </div>
+
+          <div class="menu-item drinks">
+            <div class="menu-img">
+              <img src="yemek5.png" alt="Red Wine" />
+            </div>
+            <div class="menu-content">
+              <h4>Premium Wine Selection <span class="price">$14-55</span></h4>
+              <p>
+                Carefully curated wine list featuring local and international
+                selections
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-cta">
+          <a href="#" class="btn" id="full-menu-btn">View Full Menu</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery">
+      <div class="container">
+        <div class="section-header">
+          <h2>Our Gallery</h2>
+          <div class="separator"></div>
+          <p>Step inside and experience the elegant ambiance of Savoria</p>
+        </div>
+
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <img src="yemek1.png" alt="Restaurant interior" />
+            <div class="gallery-overlay">
+              <div class="gallery-info">
+                <h3>Elegant Dining Hall</h3>
+                <p>Our spacious main dining area</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-item">
+            <img src="yemek3.png" alt="Restaurant food" />
+            <div class="gallery-overlay">
+              <div class="gallery-info">
+                <h3>Culinary Craftsmanship</h3>
+                <p>Artfully prepared dishes</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-item">
+            <img src="yemek4.png" alt="Restaurant bar" />
+            <div class="gallery-overlay">
+              <div class="gallery-info">
+                <h3>Sophisticated Bar</h3>
+                <p>Expertly crafted cocktails</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-item">
+            <img src="yemek2.png" alt="Restaurant private dining" />
+            <div class="gallery-overlay">
+              <div class="gallery-info">
+                <h3>Private Dining Room</h3>
+                <p>Intimate setting for special occasions</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-item">
+            <img src="yemek1.png" alt="Restaurant patio" />
+            <div class="gallery-overlay">
+              <div class="gallery-info">
+                <h3>Outdoor Terrace</h3>
+                <p>Al fresco dining experience</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-item">
+            <img src="yemek4.png" alt="Chef preparing food" />
+            <div class="gallery-overlay">
+              <div class="gallery-info">
+                <h3>Chef's Kitchen</h3>
+                <p>Where culinary magic happens</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+      <div class="container">
+        <div class="section-header">
+          <h2>About Us</h2>
+          <div class="separator"></div>
+        </div>
+
+        <div class="about-content">
+          <div class="about-img">
+            <img src="yemek1.png" alt="Restaurant story" />
+          </div>
+          <div class="about-text">
+            <h3>Our Story</h3>
+            <p>
+              Founded in 2015 by Chef Michael Laurent, Savoria was born from a
+              passion for creating exceptional dining experiences that celebrate
+              the finest ingredients and culinary traditions from around the
+              world.
+            </p>
+            <p>
+              What began as a small, intimate dining room has evolved into one
+              of the city's most beloved culinary destinations, known for its
+              commitment to excellence, innovation, and warm hospitality.
+            </p>
+
+            <h3>Our Philosophy</h3>
+            <p>
+              At Savoria, we believe that great food begins with great
+              ingredients. We source locally whenever possible, working directly
+              with farmers, fishermen, and artisanal producers who share our
+              commitment to quality and sustainability.
+            </p>
+            <p>
+              Each dish on our menu is thoughtfully crafted to showcase the
+              natural flavors of these exceptional ingredients, complemented by
+              house-made components and precise technique.
+            </p>
+
+            <h3>Meet Our Chef</h3>
+            <div class="chef-info">
+              <img
+                src="yemek2.png"
+                alt="Chef Michael Laurent"
+                class="chef-img"
+              />
+              <div>
+                <h4>Chef Michael Laurent</h4>
+                <p>
+                  With over 20 years of experience in renowned kitchens across
+                  Europe and America, Chef Michael brings a wealth of knowledge,
+                  creativity, and passion to Savoria's kitchen. His innovative
+                  approach to classic techniques has earned the restaurant
+                  numerous accolades and a loyal following.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <div class="container">
+        <div class="section-header">
+          <h2>Contact & Reservations</h2>
+          <div class="separator"></div>
+          <p>We look forward to welcoming you to Savoria</p>
+        </div>
+
+        <div class="contact-content">
+          <div class="contact-info">
+            <div class="info-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <h3>Location</h3>
+              <p>
+                123 Culinary Boulevard<br />Gourmet District<br />New York, NY
+                10001
+              </p>
+            </div>
+
+            <div class="info-item">
+              <i class="fas fa-clock"></i>
+              <h3>Hours</h3>
+              <p>
+                <strong>Lunch:</strong> Tuesday - Friday<br />12:00 PM - 2:30
+                PM<br />
+                <strong>Dinner:</strong> Tuesday - Sunday<br />5:30 PM - 10:00
+                PM<br />
+                <strong>Closed:</strong> Mondays
+              </p>
+            </div>
+
+            <div class="info-item">
+              <i class="fas fa-phone-alt"></i>
+              <h3>Reservations</h3>
+              <p>Phone: (212) 555-1234<br />Email: reservations@savoria.com</p>
+            </div>
+
+            <div class="map-container">
+              <img src="foto1.png" alt="Restaurant location map" />
+              <p>
+                <a href="https://maps.app.goo.gl/Aq3z8xUtW5mm9h4w5" target="_blank"
+                  >View on Google Maps</a
+                >
+              </p>
+            </div>
+          </div>
+
+          <div class="reservation-form">
+            <h3>Make a Reservation</h3>
+            <form id="reservationForm" action="mailto:yusufk6509@gmail.com" method="post" enctype="text/plain">
+
+              <div class="form-group">
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Full Name"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Email Address"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  placeholder="Phone Number"
+                  required
+                />
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <input type="date" id="date" name="date" required />
+                </div>
+                <div class="form-group">
+                  <input type="time" id="time" name="time" required />
+                </div>
+              </div>
+              <div class="form-group">
+                <select id="guests" name="guests" required>
+                  <option value="" disabled selected>Number of Guests</option>
+                  <option value="1">1 Person</option>
+                  <option value="2">2 People</option>
+                  <option value="3">3 People</option>
+                  <option value="4">4 People</option>
+                  <option value="5">5 People</option>
+                  <option value="6">6 People</option>
+                  <option value="7+">7+ People</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <textarea
+                  id="specialRequests"
+                  name="specialRequests"
+                  placeholder="Special Requests or Dietary Requirements"
+                ></textarea>
+              </div>
+              <button type="submit" class="btn">Request Reservation</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials">
+      <div class="container">
+        <div class="section-header">
+          <h2>What Our Guests Say</h2>
+          <div class="separator"></div>
+        </div>
+
+        <div class="testimonial-slider">
+          <div class="testimonial-slide active">
+            <div class="testimonial-content">
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <p>
+                "The culinary experience at Savoria is simply exceptional. Every
+                dish is a work of art, and the flavors are extraordinary. The
+                service is impeccable, making each visit a memorable occasion."
+              </p>
+              <div class="testimonial-author">
+                <h4>Emily Johnson</h4>
+                <p>Food Critic</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-slide">
+            <div class="testimonial-content">
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <p>
+                "We celebrated our anniversary at Savoria and were blown away by
+                the attention to detail. The chef's tasting menu was a journey
+                of flavors, and the wine pairings were perfect. Truly a special
+                place for any celebration."
+              </p>
+              <div class="testimonial-author">
+                <h4>Robert & Sarah Miller</h4>
+                <p>Regular Guests</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-slide">
+            <div class="testimonial-content">
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <p>
+                "As someone with dietary restrictions, I'm always nervous about
+                dining out. The team at Savoria went above and beyond to
+                accommodate my needs without compromising on flavor or
+                presentation. A rare find!"
+              </p>
+              <div class="testimonial-author">
+                <h4>Michael Chen</h4>
+                <p>Local Resident</p>
+              </div>
+            </div>
+          </div>
+
+          <button class="testimonial-btn prev-btn">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+          <button class="testimonial-btn next-btn">
+            <i class="fas fa-chevron-right"></i>
+          </button>
+
+          <div class="testimonial-dots">
+            <span class="dot active" data-slide="0"></span>
+            <span class="dot" data-slide="1"></span>
+            <span class="dot" data-slide="2"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <h2>Savoria</h2>
+            <p>Exceptional dining experiences</p>
+          </div>
+
+          <div class="footer-nav">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#menu">Menu</a></li>
+              <li><a href="#gallery">Gallery</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-contact">
+            <h3>Contact</h3>
+            <p>
+              <i class="fas fa-map-marker-alt"></i> 123 Culinary Blvd, New York
+            </p>
+            <p><i class="fas fa-phone-alt"></i> (212) 555-1234</p>
+            <p><i class="fas fa-envelope"></i> info@savoria.com</p>
+          </div>
+
+          <div class="footer-social">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+              <a href="#" aria-label="Facebook"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="#" aria-label="Instagram"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" aria-label="Twitter"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+            </div>
+            <div class="newsletter">
+              <h4>Subscribe to our newsletter</h4>
+              <form id="newsletterForm">
+                <input type="email" placeholder="Your email" required />
+                <button type="submit">
+                  <i class="fas fa-paper-plane"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>&copy; 2025 Savoria Restaurant. All Rights Reserved.</p>
+          <div class="footer-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Modal for Full Menu -->
+    <div id="menuModal" class="modal">
+      <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <h2>Complete Menu</h2>
+        <div class="modal-body">
+          <!-- Full menu content will be loaded here via JavaScript -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+  </body>
+</html>
